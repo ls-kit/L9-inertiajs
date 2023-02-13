@@ -3,57 +3,160 @@ import React from 'react'
 
 export default function Sidebar() {
     return (
-        <aside className="sidenav bg-default navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
-            <div className="sidenav-header">
-                <i className="fas fa-times p-3 cursor-pointer opacity-5 position-absolute end-0 top-0 d-none d-xl-none opacity-8 text-white" aria-hidden="true" id="iconSidenav" />
-                <Link className="navbar-brand m-0" href={route('home')} target="_blank">
-                    {/* <img src="/img/logo-ct.png" className="navbar-brand-img h-100" alt="main_logo" /> */}
-                    <span className="ms-1 font-weight-bold"> Laravel Inertia React Starter</span>
-                </Link>
+        <>
+            <div className="vertical-menu">
+                <div data-simplebar className="h-100">
+                    <div className="navbar-brand-box">
+                        <a href="index.html" className="logo">
+                            <i className="mdi mdi-album"></i>
+                            <span> Xeloro </span>
+                        </a>
+                    </div>
+
+
+                    <div id="sidebar-menu">
+
+                        <ul className="metismenu list-unstyled" id="side-menu">
+                            <li className="menu-title">Menu</li>
+
+                            <li>
+                                <a href="index.html" className="waves-effect"
+                                ><i className="mdi mdi-home-analytics"></i
+                                ><span className="badge badge-pill badge-primary float-right">7</span><span>Dashboard</span></a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-diamond-stone"></i><span>UI Elements</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-cards.html">Cards</a></li>
+                                    <li><a href="ui-carousel.html">Carousel</a></li>
+                                    <li><a href="ui-embeds.html">Embeds</a></li>
+                                    <li><a href="ui-general.html">General</a></li>
+                                    <li><a href="ui-grid.html">Grid</a></li>
+                                    <li><a href="ui-media-objects.html">Media Objects</a></li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                    <li><a href="ui-tabs.html">Tabs</a></li>
+                                    <li><a href="ui-typography.html">Typography</a></li>
+                                    <li><a href="ui-toasts.html">Toasts</a></li>
+                                    <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
+                                    <li><a href="ui-scrollspy.html">Scrollspy</a></li>
+                                    <li><a href="ui-spinners.html">Spinners</a></li>
+                                    <li><a href="ui-sweetalerts.html">Sweet Alerts</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-table-merge-cells"></i><span>Tables</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="tables-basic.html">Basic Tables</a></li>
+                                    <li><a href="tables-datatables.html">Data Tables</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-poll"></i><span>Charts</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="charts-morris.html">Morris</a></li>
+                                    <li><a href="charts-google.html">Google</a></li>
+                                    <li><a href="charts-chartjs.html">Chartjs</a></li>
+                                    <li><a href="charts-sparkline.html">Sparkline</a></li>
+                                    <li><a href="charts-knob.html">Jquery Knob</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="waves-effect"
+                                ><i className="mdi mdi-format-list-bulleted-type"></i
+                                ><span className="badge badge-pill badge-danger float-right">6</span><span>Forms</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="forms-elements.html">Elements</a></li>
+                                    <li><a href="forms-plugins.html">Plugins</a></li>
+                                    <li><a href="forms-validation.html">Validation</a></li>
+                                    <li><a href="forms-mask.html">Masks</a></li>
+                                    <li><a href="forms-quilljs.html">Quilljs</a></li>
+                                    <li><a href="forms-uploads.html">File Uploads</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-black-mesa"></i><span>Icons</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                    <li><a href="icons-fontawesome.html">Font awesome</a></li>
+                                    <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                    <li><a href="icons-feather.html">Feather Icons</a></li>
+                                </ul>
+                            </li>
+
+                            <li className="menu-title">More</li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-format-page-break"></i><span>Pages</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="pages-invoice.html">Invoice</a></li>
+                                    <li><a href="pages-starter.html">Starter Page</a></li>
+                                    <li><a href="pages-maintenance.html">Maintenance</a></li>
+                                    <li><a href="pages-faqs.html">FAQs</a></li>
+                                    <li><a href="pages-pricing.html">Pricing</a></li>
+                                    <li><a href="pages-login.html">Login</a></li>
+                                    <li><a href="pages-register.html">Register</a></li>
+                                    <li><a href="pages-recoverpw.html">Recover Password</a></li>
+                                    <li><a href="pages-lock-screen.html">Lock Screen</a></li>
+                                    <li><a href="pages-404.html">Error 404</a></li>
+                                    <li><a href="pages-500.html">Error 500</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="calendar.html" className="waves-effect"
+                                ><i className="mdi mdi-calendar-range-outline"></i><span>Calendar</span></a
+                                >
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-map-marker-radius"></i><span>Maps</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="false">
+                                    <li><a href="maps-google.html">Google Maps</a></li>
+                                    <li><a href="maps-vector.html">Vector Maps</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" className="has-arrow waves-effect"
+                                ><i className="mdi mdi-share-variant"></i><span>Multi Level</span></a
+                                >
+                                <ul className="sub-menu" aria-expanded="true">
+                                    <li><a href="javascript: void(0);">Level 1.1</a></li>
+                                    <li>
+                                        <a href="javascript: void(0);" className="has-arrow">Level 1.2</a>
+                                        <ul className="sub-menu" aria-expanded="true">
+                                            <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                            <li><a href="javascript: void(0);">Level 2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-            <hr className="horizontal dark mt-0" />
-            <div className="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-                <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <Link className={`${route().current('dashboard') && 'active'} nav-link`} href={route('dashboard')}>
-                            <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="ni ni-tv-2 text-primary text-sm opacity-10" />
-                            </div>
-                            <span className="nav-link-text ms-1">Dashboard</span>
-                        </Link>
-                    </li>
-                    <li className="nav-item mt-3">
-                        <h6 className="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Settings</h6>
-                    </li>
-                    <li className="nav-item">
-                        <Link className={`${route().current('profile') && 'active'} nav-link`} href={route('profile')}>
-                            <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="ni ni-single-02 text-dark text-sm opacity-10" />
-                            </div>
-                            <span className="nav-link-text ms-1">Profile</span>
-                        </Link>
-                    </li>
-                    <li className="nav-item mt-3">
-                        <h6 className="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Manage</h6>
-                    </li>
-                    <li className="nav-item">
-                        <Link className={`${route().current('users.*') && 'active'} nav-link`} href={route('users.index')}>
-                            <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="fas fa-user-lock text-warning text-sm opacity-10" />
-                            </div>
-                            <span className="nav-link-text ms-1">Users</span>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link " as='a' method='post' href={route('logout')}>
-                            <div className="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                                <i className="fas fa-sign-out-alt text-danger text-sm opacity-10"></i>
-                            </div>
-                            <span className="nav-link-text ms-1">Log out</span>
-                        </Link>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        </>
     )
 }
