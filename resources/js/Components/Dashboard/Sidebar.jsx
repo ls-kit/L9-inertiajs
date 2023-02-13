@@ -31,22 +31,22 @@ export default function Sidebar() {
                                 ><i className="mdi mdi-diamond-stone"></i><span>UI Elements</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="ui-buttons.html">Buttons</a></li>
-                                    <li><a href="ui-cards.html">Cards</a></li>
-                                    <li><a href="ui-carousel.html">Carousel</a></li>
-                                    <li><a href="ui-embeds.html">Embeds</a></li>
-                                    <li><a href="ui-general.html">General</a></li>
-                                    <li><a href="ui-grid.html">Grid</a></li>
-                                    <li><a href="ui-media-objects.html">Media Objects</a></li>
-                                    <li><a href="ui-modals.html">Modals</a></li>
-                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
-                                    <li><a href="ui-tabs.html">Tabs</a></li>
-                                    <li><a href="ui-typography.html">Typography</a></li>
-                                    <li><a href="ui-toasts.html">Toasts</a></li>
-                                    <li><a href="ui-tooltips-popovers.html">Tooltips & Popovers</a></li>
-                                    <li><a href="ui-scrollspy.html">Scrollspy</a></li>
-                                    <li><a href="ui-spinners.html">Spinners</a></li>
-                                    <li><a href="ui-sweetalerts.html">Sweet Alerts</a></li>
+                                    <li><Link href={ route('uielements.buttons') }>Buttons</Link></li>
+                                    <li><Link href={ route('uielements.cards') }>Cards</Link></li>
+                                    <li><Link href={ route('uielements.carousel') }>Carousel</Link></li>
+                                    <li><Link href={ route('uielements.embeds') }>Embeds</Link></li>
+                                    <li><Link href={ route('uielements.general') }>General</Link></li>
+                                    <li><Link href={ route('uielements.grid') }>Grid</Link></li>
+                                    <li><Link href={ route('uielements.mediaObjects') }>Media Objects</Link></li>
+                                    <li><Link href={ route('uielements.modals') }>Modals</Link></li>
+                                    <li><Link href={ route('uielements.progressBars') }>Progress Bars</Link></li>
+                                    <li><Link href={ route('uielements.tabs') }>Tabs</Link></li>
+                                    <li><Link href={ route('uielements.typography') }>Typography</Link></li>
+                                    <li><Link href={ route('uielements.toasts') }>Toasts</Link></li>
+                                    <li><Link href={ route('uielements.tooltipsAndPopovers') }>Tooltips & Popovers</Link></li>
+                                    <li><Link href={ route('uielements.scrollspy') }>Scrollspy</Link></li>
+                                    <li><Link href={ route('uielements.spinners') }>Spinners</Link></li>
+                                    <li><Link href={ route('uielements.sweetAlerts') }>Sweet Alerts</Link></li>
                                 </ul>
                             </li>
 
