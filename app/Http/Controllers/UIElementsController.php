@@ -53,7 +53,7 @@ class UIElementsController extends Controller
 
     public function tabs()
     {
-        return inertia('UIElements/ProgressBars');
+        return inertia('UIElements/Tabs');
     }
 
     public function typography()
