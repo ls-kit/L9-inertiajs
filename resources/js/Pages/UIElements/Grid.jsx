@@ -2,19 +2,19 @@ import React from 'react';
 import Base from '../../Layouts/Base';
 export default function Grid() {
     return (
-        <div class="page-content">
-            <div class="container-fluid">
+        <div className="page-content">
+            <div className="container-fluid">
 
 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="page-title-box d-flex align-items-center justify-content-between">
-                            <h4 class="mb-0 font-size-18">Grid</h4>
+                <div className="row">
+                    <div className="col-12">
+                        <div className="page-title-box d-flex align-items-center justify-content-between">
+                            <h4 className="mb-0 font-size-18">Grid</h4>
 
-                            <div class="page-title-right">
-                                <ol class="breadcrumb m-0">
-                                    <li class="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
-                                    <li class="breadcrumb-item active">Grid</li>
+                            <div className="page-title-right">
+                                <ol className="breadcrumb m-0">
+                                    <li className="breadcrumb-item"><a href="javascript: void(0);">UI Elements</a></li>
+                                    <li className="breadcrumb-item active">Grid</li>
                                 </ol>
                             </div>
 
@@ -25,37 +25,37 @@ export default function Grid() {
 
 
 
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Grid Options</h4>
-                                <p class="card-subtitle mb-4">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="card">
+                            <div className="card-body">
+                                <h4 className="card-title">Grid Options</h4>
+                                <p className="card-subtitle mb-4">
                                     See how aspects of the Bootstrap grid system work across multiple devices with a handy table.
                                 </p>
 
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-striped mb-0">
+                                <div className="table-responsive">
+                                    <table className="table table-bordered table-striped mb-0">
                                         <thead>
                                             <tr>
                                                 <th></th>
-                                                <th class="text-center">
+                                                <th className="text-center">
                                                     Extra small<br />
                                                     <small>&lt;576px</small>
                                                 </th>
-                                                <th class="text-center">
+                                                <th className="text-center">
                                                     Small<br />
                                                     <small>≥576px</small>
                                                 </th>
-                                                <th class="text-center">
+                                                <th className="text-center">
                                                     Medium<br />
                                                     <small>≥768px</small>
                                                 </th>
-                                                <th class="text-center">
+                                                <th className="text-center">
                                                     Large<br />
                                                     <small>≥992px</small>
                                                 </th>
-                                                <th class="text-center">
+                                                <th className="text-center">
                                                     Extra large<br />
                                                     <small>≥1200px</small>
                                                 </th>
@@ -63,7 +63,7 @@ export default function Grid() {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th class="text-nowrap" scope="row">Max container width</th>
+                                                <th className="text-nowrap" scope="row">Max container width</th>
                                                 <td>None (auto)</td>
                                                 <td>540px</td>
                                                 <td>720px</td>
@@ -71,7 +71,7 @@ export default function Grid() {
                                                 <td>1140px</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-nowrap" scope="row">Class prefix</th>
+                                                <th className="text-nowrap" scope="row">className prefix</th>
                                                 <td><code>.col-</code></td>
                                                 <td><code>.col-sm-</code></td>
                                                 <td><code>.col-md-</code></td>
@@ -79,19 +79,19 @@ export default function Grid() {
                                                 <td><code>.col-xl-</code></td>
                                             </tr>
                                             <tr>
-                                                <th class="text-nowrap" scope="row"># of columns</th>
+                                                <th className="text-nowrap" scope="row"># of columns</th>
                                                 <td colspan="5">12</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-nowrap" scope="row">Gutter width</th>
+                                                <th className="text-nowrap" scope="row">Gutter width</th>
                                                 <td colspan="5">24px (12px on each side of a column)</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-nowrap" scope="row">Nestable</th>
+                                                <th className="text-nowrap" scope="row">Nestable</th>
                                                 <td colspan="5">Yes</td>
                                             </tr>
                                             <tr>
-                                                <th class="text-nowrap" scope="row">Column ordering</th>
+                                                <th className="text-nowrap" scope="row">Column ordering</th>
                                                 <td colspan="5">Yes</td>
                                             </tr>
                                         </tbody>
