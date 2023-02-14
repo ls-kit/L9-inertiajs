@@ -55,8 +55,8 @@ export default function Sidebar() {
                                 ><i className="mdi mdi-table-merge-cells"></i><span>Tables</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="tables-basic.html">Basic Tables</a></li>
-                                    <li><a href="tables-datatables.html">Data Tables</a></li>
+                                    <li><Link href={ route('tables.basicTables')}>Basic Tables</Link></li>
+                                    <li><Link href={ route('tables.dataTables')}>Data Tables</Link></li>
                                 </ul>
                             </li>
 
@@ -65,11 +65,11 @@ export default function Sidebar() {
                                 ><i className="mdi mdi-poll"></i><span>Charts</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="charts-morris.html">Morris</a></li>
-                                    <li><a href="charts-google.html">Google</a></li>
-                                    <li><a href="charts-chartjs.html">Chartjs</a></li>
-                                    <li><a href="charts-sparkline.html">Sparkline</a></li>
-                                    <li><a href="charts-knob.html">Jquery Knob</a></li>
+                                    <li><Link href={ route('charts.morris') }>Morris</Link></li>
+                                    <li><Link href={ route('charts.google') }>Google</Link></li>
+                                    <li><Link href={ route('charts.chartjs') }>Chartjs</Link></li>
+                                    <li><Link href={ route('charts.sparkline') }>Sparkline</Link></li>
+                                    <li><Link href={ route('charts.jqueryKnob') }>Jquery Knob</Link></li>
                                 </ul>
                             </li>
 
@@ -79,12 +79,12 @@ export default function Sidebar() {
                                 ><span className="badge badge-pill badge-danger float-right">6</span><span>Forms</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="forms-elements.html">Elements</a></li>
-                                    <li><a href="forms-plugins.html">Plugins</a></li>
-                                    <li><a href="forms-validation.html">Validation</a></li>
-                                    <li><a href="forms-mask.html">Masks</a></li>
-                                    <li><a href="forms-quilljs.html">Quilljs</a></li>
-                                    <li><a href="forms-uploads.html">File Uploads</a></li>
+                                    <li><Link href={ route('forms.elements') }>Elements</Link></li>
+                                    <li><Link href={ route('forms.plugins') }>Plugins</Link></li>
+                                    <li><Link href={ route('forms.validation') }>Validation</Link></li>
+                                    <li><Link href={ route('forms.masks') }>Masks</Link></li>
+                                    <li><Link href={ route('forms.quilljs') }>Quilljs</Link></li>
+                                    <li><Link href={ route('forms.fileUploads') }>File Uploads</Link></li>
                                 </ul>
                             </li>
 
@@ -93,10 +93,10 @@ export default function Sidebar() {
                                 ><i className="mdi mdi-black-mesa"></i><span>Icons</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="icons-materialdesign.html">Material Design</a></li>
-                                    <li><a href="icons-fontawesome.html">Font awesome</a></li>
-                                    <li><a href="icons-dripicons.html">Dripicons</a></li>
-                                    <li><a href="icons-feather.html">Feather Icons</a></li>
+                                    <li><Link href={ route('icons.materialDesign') }>Material Design</Link></li>
+                                    <li><Link href={ route('icons.fontAwesome') }>Font awesome</Link></li>
+                                    <li><Link href={ route('icons.dripicons') }>Dripicons</Link></li>
+                                    <li><Link href={ route('icons.featherIcons') }>Feather Icons</Link></li>
                                 </ul>
                             </li>
 
@@ -107,24 +107,23 @@ export default function Sidebar() {
                                 ><i className="mdi mdi-format-page-break"></i><span>Pages</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="pages-invoice.html">Invoice</a></li>
-                                    <li><a href="pages-starter.html">Starter Page</a></li>
-                                    <li><a href="pages-maintenance.html">Maintenance</a></li>
-                                    <li><a href="pages-faqs.html">FAQs</a></li>
-                                    <li><a href="pages-pricing.html">Pricing</a></li>
-                                    <li><a href="pages-login.html">Login</a></li>
-                                    <li><a href="pages-register.html">Register</a></li>
-                                    <li><a href="pages-recoverpw.html">Recover Password</a></li>
-                                    <li><a href="pages-lock-screen.html">Lock Screen</a></li>
-                                    <li><a href="pages-404.html">Error 404</a></li>
-                                    <li><a href="pages-500.html">Error 500</a></li>
+                                    <li><Link href={ route('pages.invoice') }>Invoice</Link></li>
+                                    <li><Link href={ route('pages.starterPage') }>Starter Page</Link></li>
+                                    <li><Link href={ route('pages.maintenance') }>Maintenance</Link></li>
+                                    <li><Link href={ route('pages.faqs') }>FAQs</Link></li>
+                                    <li><Link href={ route('pages.pricing') }>Pricing</Link></li>
+                                    <li><Link href={ route('pages.login') }>Login</Link></li>
+                                    <li><Link href={ route('pages.register') }>Register</Link></li>
+                                    <li><Link href={ route('pages.recoverPassword') }>Recover Password</Link></li>
+                                    <li><Link href={ route('pages.lockScreen') }>Lock Screen</Link></li>
+                                    <li><Link href={ route('pages.error404') }>Error 404</Link></li>
+                                    <li><Link href={ route('pages.error500') }>Error 500</Link></li>
                                 </ul>
                             </li>
 
                             <li>
-                                <a href="calendar.html" className="waves-effect"
-                                ><i className="mdi mdi-calendar-range-outline"></i><span>Calendar</span></a
-                                >
+                                <Link href={ route('calendar') } className="waves-effect"
+                                ><i className="mdi mdi-calendar-range-outline"></i><span>Calendar</span></Link>
                             </li>
 
                             <li>
@@ -132,8 +131,8 @@ export default function Sidebar() {
                                 ><i className="mdi mdi-map-marker-radius"></i><span>Maps</span></a
                                 >
                                 <ul className="sub-menu" aria-expanded="false">
-                                    <li><a href="maps-google.html">Google Maps</a></li>
-                                    <li><a href="maps-vector.html">Vector Maps</a></li>
+                                    <li><Link href={ route('maps.googleMaps') }>Google Maps</Link></li>
+                                    <li><Link href={ route('maps.vectorMaps') }>Vector Maps</Link></li>
                                 </ul>
                             </li>
 
