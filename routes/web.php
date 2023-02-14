@@ -32,7 +32,7 @@ Route::middleware('guest')->group(function () {
     Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
 
     // XERO TEMPLATE ROUTES
-    Route::group(['prefix' => 'ui-elements', 'as' => 'uielements.'], function () {
+    Route::group(['as' => 'uielements.'], function () {
         Route::get('buttons', [UIElementsController::class, 'buttons'])->name('buttons');
         Route::get('cards', [UIElementsController::class, 'cards'])->name('cards');
         Route::get('carousel', [UIElementsController::class, 'carousel'])->name('carousel');
