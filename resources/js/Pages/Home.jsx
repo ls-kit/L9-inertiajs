@@ -1,23 +1,15 @@
 import React from 'react'
-import Footer from '../Components/Dashboard/Footer'
 import Main from '../Components/Dashboard/Main'
-import Navbar from '../Components/Dashboard/Navbar'
-import Sidebar from '../Components/Dashboard/Sidebar'
-import Guest from '../Layouts/Guest'
+import Base from '../Layouts/Base'
+
 
 export default function Home() {
     return (
         <>
-            <div id="layout-wrapper">
-                <Navbar />
-                <Sidebar />
-                <div className="main-content">
-                    <Main />
-                    <Footer />
-                </div>
-            </div>
+            <Main />
         </>
+
     )
 }
 
-Home.layout = (page) => <Guest children={page} title={"Home"} />
+Home.layout = (page) => <Base children={page} title={"Home"} />

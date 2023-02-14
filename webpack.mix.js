@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,10 +11,10 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js("resources/js/app.js", "public/js")
     .react()
-    .sass('resources/sass/app.sass', 'public/css', [
+    .postCss("resources/css/app.css", "public/css", [
         //
     ]);
 
-mix.browserSync('laravel-9.test');
+mix.browserSync("laravel-9.test");

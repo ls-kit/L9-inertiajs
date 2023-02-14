@@ -2,12 +2,10 @@ import { Head, usePage } from '@inertiajs/inertia-react'
 import React from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 import Footer from '../Components/Dashboard/Footer';
-import Main from '../Components/Dashboard/Main';
 import Navbar from '../Components/Dashboard/Navbar';
-import Sidebar from '../Components/Dashboard/Sidebar';
 
 
-export default function Base({ children, title }) {
+export default function Default({ children, title }) {
     const { flash } = usePage().props;
 
     flash.type && toast[flash.type](flash.message)
@@ -19,7 +17,6 @@ export default function Base({ children, title }) {
             <Navbar />
             <Sidebar />
             <main class="main-content">
-
                 {children}
                 <Footer />
             </main>
