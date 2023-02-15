@@ -10,7 +10,10 @@
 
 
     {{-- new --}}
+
+    <link href="assets/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
     <!-- App css -->
+
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
@@ -49,6 +52,12 @@
     <script src="assets/plugins/raphael/raphael.min.js"></script>
     <!-- Custom Js -->
     <script src="assets/pages/dashboard-demo.js"></script>
+
+    <!-- Sweet Alerts Js-->
+    <script src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Sweet Alerts Js-->
+    <script src="assets/pages/sweet-alert-demo.js"></script>
 
     <!-- App js -->
     <script src="assets/js/theme.js"></script>
