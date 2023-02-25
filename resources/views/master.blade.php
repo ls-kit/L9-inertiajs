@@ -59,6 +59,9 @@
     <!-- Sweet Alerts Js-->
     <script src="assets/pages/sweet-alert-demo.js"></script>
 
+    <!-- Validation custom js-->
+    <script crossorigin  src="assets/pages/validation-demo.js"></script>
+
     <!-- App js -->
     <script src="assets/js/theme.js"></script>
     {{-- new --}}

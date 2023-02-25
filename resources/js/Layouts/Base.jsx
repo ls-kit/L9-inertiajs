@@ -18,7 +18,7 @@ export default function Base({ children, title }) {
             <Head title={title} />
             <Navbar />
             <Sidebar />
-            <main class="main-content">
+            <main className="main-content">
 
                 {children}
                 <Footer />
